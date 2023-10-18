@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo  "Hello let me know your age"
 read -p "請輸入你的年齡:" age
 
 if [ $age -lt 18 ]; then
