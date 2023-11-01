@@ -1,0 +1,14 @@
+---
+- name: 檢查有沒有https的服務
+  hosts: [yuchiao_linux_server] 
+  become: yes
+  become_user: root
+  tasks:
+    - name: 檢查有沒有https服務
+      ansible.builtin.service:
+        name: https.services
+      register: https_status
+
+    - name: 印出檢查結果
+      debug:
+        var: https_status

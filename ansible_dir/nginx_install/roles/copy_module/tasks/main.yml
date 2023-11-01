@@ -1,0 +1,5 @@
+---
+- name: 複製檔案至/tmp/joy_ansible底下
+  copy:
+    src: hello.txt
+    dest: /tmp/joy_ansible

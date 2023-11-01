@@ -1,0 +1,16 @@
+---
+- name: install_nginx_service
+  hosts: yuchiao_linux_server
+  become: yes
+  tasks:
+   - name : install_nginx_service
+     yum:
+       name: nginx
+       state: latest
+     notify:
+       - restart_nginx_service
+  handlers:
+    - name: restart_nginx_service
+      service:
+        name: nginx
+        state: restart

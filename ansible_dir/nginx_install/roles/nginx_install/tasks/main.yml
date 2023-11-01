@@ -1,0 +1,25 @@
+---
+- name: "尋找nginx服務"
+  shell: yum search nginx
+  register: result
+
+- name: "確認有找到nginx"
+  debug:
+    var: result.stdout
+
+- name: "安裝nginx服務"
+  become: true
+  shell: yum install nginx
+  register: install_result
+
+- name: "確認安裝成功"
+  debug:
+    var: install_result.stdout
+
+- name: "下指令檢查確定有該服務"
+  shell: systemctl status nginx
+  register: check_result
+
+- name: "確認有該服務"
+  debug:
+    var: check_result.stdout

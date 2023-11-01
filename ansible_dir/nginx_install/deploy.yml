@@ -1,0 +1,5 @@
+---
+- name: 基本系統設定
+  hosts: yuchiao-linux-server
+  roles:
+    - nginx_install
