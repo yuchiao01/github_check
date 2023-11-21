@@ -1,0 +1,4 @@
+---
+ - hosts: [test-group]
+   roles:
+    - echo_hello
