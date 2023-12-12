@@ -1,5 +1,5 @@
 ---
-- name: 複製檔案至/tmp/joy_ansible下
+- name: 複製joy_ansible至/tmp下
   hosts: yuchiao-linux-server
   roles:
     - copy_module

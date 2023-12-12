@@ -1,0 +1,4 @@
+---
+- hosts: yuchiao-linux-server
+  roles: 
+    - script_copy

@@ -1,0 +1,3 @@
+#home_dir_shellscript: /Users/yuchiao/Slack.sh
+target_home_dir: /home/yuchiao
+target_host_ip: 10.211.55.3
