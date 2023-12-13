@@ -1,6 +1,6 @@
 ---
-- name: copy Slack.sh to {{ target_host_ip }}@{{ target_home_dir }}
+- name: copy judge.sh to {{ target_host_ip }}@{{ target_home_dir }}
   copy:
-    src: Slack.sh
+    src: judge.sh
     dest: "{{ target_home_dir }}"
     remote_src: yes
